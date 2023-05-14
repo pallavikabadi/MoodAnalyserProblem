@@ -1,4 +1,4 @@
-package com.bridgelabzUc1;
+package com.bridgelabz.Uc1;
 
 import com.bridgelabz.Uc1.MoodAnalyser;
 import org.junit.Test;
