@@ -1,10 +1,25 @@
 package com.bridgelabz.Refactor;
 
 public class MoodAnalyser {
-    public String moodAnalysis(String message){
-        if (message.contains("I am in sad Mood")) {
-            return "SAD";
-        }else
+    private String message;
+
+    public MoodAnalyser(String message) {
+
+        this.message = message;
+
+    }
+    public String moodAnalysis(){
+
+        try {
+
+            if (message.contains("I am in sad mood"))
+                return "SAD";
+            else if (message.contains("I am in happy mood"))
+                return "SAD";
+
+        } catch (NullPointerException e) {
             return "HAPPY";
+        }
+        return null;
     }
 }
